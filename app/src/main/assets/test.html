@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function getAndroidId() {
+				if (androidId) {
+					document.getElementById("content").innerHTML = androidId.toJson();
+				} else {
+					document.getElementById("content").innerHTML = "androidId false";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		Hola
+		<div id="content">
+		</div>
+		<script type="text/javascript">
+			getAndroidId();
+		</script>
+	</body>
+</html>
